@@ -1,14 +1,13 @@
 <?php
 
-namespace Modules\Education\Models;
+namespace Modules\Experience\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-
 use Modules\Resume\Models\Resume;
-// use Modules\Education\Database\Factories\EducationFactory;
+// use Modules\Experience\Database\Factories\ExperienceFactory;
 
-class Education extends Model
+class Experience extends Model
 {
     use HasFactory;
 
@@ -17,12 +16,10 @@ class Education extends Model
      */
     protected $fillable = [
         'resume_id',
-        'institution',
-        'degree',
-        'field_of_study',
+        'company',
+        'job_title',
         'start_date',
         'end_date',
-        'grade',
         'description',
     ];
 
