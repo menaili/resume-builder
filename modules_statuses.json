@@ -3,5 +3,6 @@
     "Cv": true,
     "Resume": true,
     "Education": true,
-    "Experience": true
+    "Experience": true,
+    "Skills": true
 }
