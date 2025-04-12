@@ -4,5 +4,6 @@
     "Resume": true,
     "Education": true,
     "Experience": true,
-    "Skills": true
+    "Skills": true,
+    "Certifications": true
 }
