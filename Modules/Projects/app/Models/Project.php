@@ -1,13 +1,13 @@
 <?php
 
-namespace Modules\Certifications\Models;
+namespace Modules\Projects\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Modules\Resume\Models\Resume;
-// use Modules\Certifications\Database\Factories\CertificationFactory;
+use modules\Resume\Models\Resume;
+// use Modules\Projects\Database\Factories\ProjectFactory;
 
-class Certification extends Model
+class Project extends Model
 {
     use HasFactory;
 
@@ -15,12 +15,11 @@ class Certification extends Model
      * The attributes that are mass assignable.
      */
     protected $fillable = [
-        'resume_id',
         'name',
-        'issuing_organization',
+        'description',
+        'technologies',
         'start_date',
         'end_date',
-        'description',
     ];
 
     protected $casts = [
